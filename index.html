@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="heading">WebGixpress Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform.</p>
+        </header>
+        <main>
+            <form>
+                <div class="info">
+                    <label for="name" class="form-info">Name</label>
+                    <input type="text" name="name" class="form-input" placeholder="Enter your name" required>
+                </div>
+
+                <div class="info">
+                    <label for="email" class="form-info">Email</label>
+                    <input type="email" name="email" class="form-input" placeholder="Enter your email" required>
+                </div>
+
+                <div class="info">
+                    <label for="age" class="form-info">
+                        Age
+                        <span class="hint">(optional)</span>
+                    </label>
+                    <input type="number" name="age" class="form-input" min="10" max="150" placeholder="Age" required>
+                </div>
+
+                <div class="info">
+                    <p class="form-info">Which option best describes your current role?</p>
+                    <select name="role" class="form-input dropdown" required>
+                        <option value="" disabled selected>Select your current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full-time job</option>
+                        <option value="learner">Full-time learner</option>
+                        <option value="prefer-no">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="info">
+                    <p class="form-info">Would you recommend WebGixpress to a friend?</p>
+                    <label for="recommendation">
+                        <input type="radio" name="recommendation" value="definitely" class="input-radio">
+                        Definitely
+                    </label>
+                    <label for="recommendation">
+                        <input type="radio" name="recommendation" value="maybe" class="input-radio">
+                        Maybe
+                    </label>
+                    <label for="recommendation">
+                        <input type="radio" name="recommendation" value="not-sure" class="input-radio">
+                        Not Sure
+                    </label>
+                </div>
+
+                <div class="info">
+                    <p class="form-info">What is your favourite feature of WebGixpress?</p>
+                    <select name="favourite-feature" class="form-input dropdown" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open-source">Open Source</option>
+                    </select>
+                </div>
+
+                <div class="info">
+                    <p class="form-info"> What would you like to see improved? <span class="hint">(Check all that apply)</span></p>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="frontend-projects" class="input-checkbox">
+                        Frontend Projects
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="backend-projects" class="input-checkbox">
+                        Backend Projects
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox">
+                        Data Visualization
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox">
+                        Challenges
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox">
+                        Open Source Community
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="gitter-help-rooms" class="input-checkbox">
+                        Gitter Help Rooms
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="videos" class="input-checkbox">
+                        Videos
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="city-meetups" class="input-checkbox">
+                        City Meetups
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="wiki" class="input-checkbox">
+                        Wiki
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="forum" class="input-checkbox">
+                        Forum
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" name="prefer" value="additional-courses" class="input-checkbox">
+                        Additional Courses
+                    </label>
+                </div>
+
+                <div class="info">
+                    <p class="form-info">Any comments or suggestions?</p>
+                    <textarea name="comments" id="additional-comments" rows="5" required placeholder="Enter your comments here..."></textarea>
+                </div>
+                <button type="submit" id="btn-submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>Site designed and developed by Deep Das.</p>
+            <p>A product of WebGixpress.</p>
+            <p>Copyright 2021.</p>
+        </footer>
+    </div>
+</body>
+</html>
